@@ -130,6 +130,8 @@
         if(self.selBlock) {
             self.selBlock(selectedIndex);
         }
+        // Also fire a ValueChanged Event
+        [self sendActionsForControlEvents:UIControlEventValueChanged];
     }
 }
 
